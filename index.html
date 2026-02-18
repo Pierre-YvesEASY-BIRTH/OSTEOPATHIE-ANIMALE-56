@@ -8,3 +8,199 @@
   <p>This is my website hosted on GitHub.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ostéopathie Animale - Cabinet Professionnel</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+* {margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', sans-serif;}
+body {background:#f8faf9;color:#1f2d2a;line-height:1.6;}
+a {text-decoration:none;color:inherit;}
+
+header {
+  position:relative;
+  height:100vh;
+  background:
+  linear-gradient(rgba(15,25,22,0.65),rgba(15,25,22,0.65)),
+  url('https://images.unsplash.com/photo-1517849845537-4d257902454a') center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+header h1 {font-size:clamp(2rem,5vw,3.5rem);margin-bottom:20px;}
+header p {font-size:clamp(1rem,3vw,1.3rem);max-width:700px;}
+
+nav {
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+
+nav a {
+  margin-left:15px;
+  background:white;
+  padding:8px 15px;
+  border-radius:20px;
+  font-weight:600;
+  font-size:0.9rem;
+}
+
+section {
+  padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.8s ease;
+}
+
+section.visible {opacity:1;transform:translateY(0);}
+
+h2 {color:#2f6e5f;margin-bottom:25px;font-size:clamp(1.6rem,4vw,2.2rem);}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.card {
+  background:white;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+  transition:0.3s;
+}
+.card:hover {transform:translateY(-6px);}
+
+.cta {
+  text-align:center;
+}
+
+.cta a {
+  display:inline-block;
+  margin:15px;
+  padding:14px 28px;
+  background:#2f6e5f;
+  color:white;
+  border-radius:30px;
+  font-weight:600;
+}
+
+.phone {
+  font-size:1.2rem;
+  margin-top:20px;
+}
+
+.map-container {
+  margin-top:30px;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+iframe {
+  width:100%;
+  height:350px;
+  border:0;
+}
+
+footer {
+  background:#1f2d2a;
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:0.9rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  header {height:85vh;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="tarifs.html">Tarifs</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<h1>Ostéopathie Animale</h1>
+<p>Cabinet professionnel dédié au bien-être et à la performance de vos animaux.</p>
+</header>
+
+<section>
+<h2>Approche thérapeutique</h2>
+<p>
+L’ostéopathie animale est une thérapie manuelle visant à restaurer la mobilité,
+corriger les déséquilibres et accompagner l’animal vers un fonctionnement optimal.
+Chaque consultation est adaptée à l’âge, l’activité et l’historique de votre compagnon.
+</p>
+</section>
+
+<section>
+<h2>Animaux pris en charge</h2>
+<div class="grid">
+<div class="card">
+<h3>🐶 Chiens</h3>
+<p>Boiteries, douleurs articulaires, suivi sportif, prévention.</p>
+</div>
+<div class="card">
+<h3>🐱 Chats</h3>
+<p>Raideurs, douleurs chroniques, récupération post-traumatique.</p>
+</div>
+<div class="card">
+<h3>🐴 Chevaux</h3>
+<p>Suivi du cheval de sport, asymétries, optimisation des performances.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact & Localisation</h2>
+
+<div class="cta">
+<a href="tel:+33678430958">📞 00 33 (0)6 78 43 09 58</a>
+<a href="mailto:votreemail@example.com">✉️ Email</a>
+</div>
+
+<div class="map-container">
+<iframe 
+src="https://maps.google.com/maps?q=OSTEOPATHE%20Animalier%20O.A.%20555%20-%20M.%20BIHAN&t=&z=13&ie=UTF8&iwloc=&output=embed"
+allowfullscreen>
+</iframe>
+</div>
+
+</section>
+
+<footer>
+© 2026 - Cabinet d’Ostéopathie Animale
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+  sections.forEach(sec=>{
+    if(sec.getBoundingClientRect().top < window.innerHeight - 100){
+      sec.classList.add("visible");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
