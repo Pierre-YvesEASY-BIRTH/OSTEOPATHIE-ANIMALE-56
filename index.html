@@ -1,160 +1,366 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ostéopathe Animalier – Ostéopathie Équine, Canine et Féline</title>
-<meta name="description" content="Ostéopathe animalier spécialisé en ostéopathie équine, canine et féline. Intervention en pré et post-opératoire. Consultations à domicile.">
-<meta name="keywords" content="ostéopathe animalier, ostéopathie équine, ostéopathie canine, ostéopathie féline, pré-opératoire animal, post-opératoire animal">
-<link rel="canonical" href="https://votresite.fr/">
+<!-- ===== SEO ELITE LOCAL ===== -->
+
+<title>Ostéopathe animalier à Vannes (56) | Cheval, chien, chat | M. BIHAN O.A. N°555</title>
+
+<meta name="description" content="M. BIHAN, ostéopathe animalier O.A. N°555 à Vannes (56). Ostéopathie équine, canine et féline à domicile. Pré et post-opératoire. Consultation chevaux, chiens et chats à Vannes et Morbihan.">
+
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="M. BIHAN">
+
+<link rel="canonical" href="https://votresite.fr">
+
+<!-- Google verification future -->
+<meta name="geo.region" content="FR-56">
+<meta name="geo.placename" content="Vannes">
+<meta name="geo.position" content="47.658236; -2.760847">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="Ostéopathe animalier à Vannes (56) – M. BIHAN">
+<meta property="og:description" content="Ostéopathie équine, canine et féline à domicile à Vannes et Morbihan.">
+<meta property="og:type" content="website">
 
 <style>
-/* ===== GLOBAL ===== */
-* {margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', sans-serif;}
-body {background:#f8faf9;color:#1f2d2a;line-height:1.6;}
-a {text-decoration:none;color:inherit;}
-header {position:relative;height:100vh;background:linear-gradient(rgba(15,25,22,0.65),rgba(15,25,22,0.65)),url('https://images.unsplash.com/photo-1517849845537-4d257902454a') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;padding:20px;}
-header h1 {font-size:clamp(2rem,5vw,3.5rem);margin-bottom:20px;}
-header p {font-size:clamp(1rem,3vw,1.3rem);max-width:700px;}
-nav {position:absolute;top:20px;right:20px;}
-nav a {margin-left:15px;background:white;padding:8px 15px;border-radius:20px;font-weight:600;font-size:0.9rem;}
-section {padding:70px 20px;max-width:1100px;margin:auto;opacity:0;transform:translateY(40px);transition:0.8s ease;}
-section.visible {opacity:1;transform:translateY(0);}
-h2 {color:#2f6e5f;margin-bottom:25px;font-size:clamp(1.6rem,4vw,2.2rem);}
-.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
-.card {background:white;padding:30px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.06);transition:0.3s;}
-.card:hover {transform:translateY(-6px);}
-.cta {text-align:center;}
-.cta a {display:inline-block;margin:15px;padding:14px 28px;background:#2f6e5f;color:white;border-radius:30px;font-weight:600;}
-.cta a.google-review {background:#fbbc05;color:#1f2d2a;}
-.phone {font-size:1.2rem;margin-top:20px;}
-.map-container {margin-top:30px;border-radius:15px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,0.08);}
-iframe {width:100%;height:350px;border:0;}
-footer {background:#1f2d2a;color:white;text-align:center;padding:20px;font-size:0.9rem;}
-@media(max-width:768px){header {height:85vh;}}
+
+/* GLOBAL */
+
+body{
+margin:0;
+font-family:Segoe UI,sans-serif;
+background:#f4f7f6;
+color:#1f2d2a;
+line-height:1.6;
+}
+
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h1,h2{
+color:#1a3d35;
+}
+
+img{
+width:100%;
+border-radius:12px;
+}
+
+/* HEADER */
+
+header{
+height:85vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+
+background:
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("cheval.jpg") center/cover;
+}
+
+/* NAV */
+
+nav{
+position:absolute;
+top:20px;
+right:20px;
+}
+
+nav a{
+background:white;
+padding:10px 18px;
+border-radius:30px;
+margin-left:10px;
+font-weight:600;
+}
+
+/* BANNIERE */
+
+.animaux{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.animaux a{
+position:relative;
+height:260px;
+}
+
+.animaux img{
+height:100%;
+object-fit:cover;
+}
+
+.animaux span{
+position:absolute;
+bottom:20px;
+left:20px;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:8px 20px;
+border-radius:20px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+margin-top:20px;
+}
+
+/* BUTTON */
+
+.cta{
+text-align:center;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+margin:10px;
+border-radius:30px;
+font-weight:600;
+}
+
+.sms{background:#25D366;color:white;}
+.tel{background:#2f6e5f;color:white;}
+.google{background:#fbbc05;}
+
+footer{
+background:#1f2d2a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <nav>
+
+<a href="#chien">Chien</a>
+<a href="#chat">Chat</a>
+<a href="#cheval">Cheval</a>
 <a href="#tarifs">Tarifs</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
-<h1>Ostéopathie Animale</h1>
-<p>Cabinet professionnel dédié au bien-être et à la performance de vos animaux.</p>
+<div>
+
+<h1>Ostéopathe animalier à Vannes (56)</h1>
+
+<p>
+M. BIHAN – Ostéopathe Animalier O.A. N°555  
+Chevaux • Chiens • Chats
+</p>
+
+</div>
+
 </header>
 
+
+<!-- BANNIERE -->
+
+<section class="animaux">
+
+<a href="#chien">
+<img src="chien.jpg" alt="ostéopathe chien Vannes 56">
+<span>Chien</span>
+</a>
+
+<a href="#chat">
+<img src="chat.jpg" alt="ostéopathe chat Vannes 56">
+<span>Chat</span>
+</a>
+
+<a href="#cheval">
+<img src="cheval.jpg" alt="ostéopathe cheval Vannes 56">
+<span>Cheval</span>
+</a>
+
+</section>
+
+
+<!-- PRESENTATION SEO -->
+
 <section>
-<h2>Approche thérapeutique</h2>
+
+<h2>Ostéopathie animale à Vannes et Morbihan (56)</h2>
+
+<div class="card">
+
 <p>
-L’ostéopathie animale est une thérapie manuelle visant à restaurer la mobilité,
-corriger les déséquilibres et accompagner l’animal vers un fonctionnement optimal.
-Chaque consultation est adaptée à l’âge, l’activité et l’historique de votre compagnon.
-Idéal en pré-opératoire comme en post-opératoire.
+
+M. BIHAN, ostéopathe animalier O.A. N°555, intervient à Vannes et dans tout le Morbihan pour les chevaux, chiens et chats.
+
 </p>
+
+<p>
+
+L’ostéopathie animale permet de soulager les douleurs, améliorer la mobilité et optimiser les performances.
+
+</p>
+
+<p>
+
+Elle est particulièrement recommandée en pré-opératoire et post-opératoire pour optimiser la récupération de votre animal.
+
+</p>
+
+</div>
+
 </section>
 
-<section>
-<h2>Animaux pris en charge</h2>
-<div class="grid">
-<div class="card">
-<img src="lien-photo-chien.jpg" alt="Ostéopathie canine" style="width:100%;border-radius:12px;margin-bottom:15px;">
-<h3>Ostéopathie Canine</h3>
-<p>Boiteries, douleurs articulaires, suivi sportif, prévention.</p>
-</div>
 
-<div class="card">
-<img src="lien-photo-chat.jpg" alt="Ostéopathie féline" style="width:100%;border-radius:12px;margin-bottom:15px;">
-<h3>Ostéopathie Féline</h3>
-<p>Raideurs, douleurs chroniques, récupération post-opératoire.</p>
-</div>
-
-<div class="card">
-<img src="lien-photo-cheval.jpg" alt="Ostéopathie équine" style="width:100%;border-radius:12px;margin-bottom:15px;">
-<h3>Ostéopathie Équine</h3>
-<p>Suivi du cheval de sport, asymétries, optimisation des performances.</p>
-</div>
-</div>
-</section>
+<!-- TARIFS -->
 
 <section id="tarifs">
-<h2>Tarifs des consultations</h2>
-<p><strong>Consultation canine ou féline :</strong> 50 €</p>
-<p><strong>Consultation équine :</strong> 60 €</p>
-<p>Rassembler plusieurs consultations successives peut être adapté.</p>
 
-<h3>Prise de rendez-vous</h3>
-<p>
-📞 00 33 (0)6 78 43 09 58<br>
-Merci de privilégier l’envoi d’un SMS avec :
-votre nom, votre adresse, le nom de votre animal et le motif de votre appel.
-</p>
+<h2>Tarifs ostéopathe animalier Vannes</h2>
 
-<h3>Règlement</h3>
-<p>Paiement préférentiel par virement bancaire. IBAN transmis après confirmation du rendez-vous.</p>
-</section>
+<div class="card">
 
-<section>
-<h2>Frais de déplacement</h2>
-<p>
-+ 5 € jusqu'à 5 km<br>
-+ 10 € entre 5 km et 10 km<br>
-+ 15 € au-delà de 15 km
-</p>
-<div class="map-container">
-<iframe src="https://www.google.com/maps/d/embed?mid=VOTRE_CARTE_PERSONNALISEE" allowfullscreen></iframe>
+50 € consultation canine ou féline
+
+<br><br>
+
+60 € consultation équine
+
+<br><br>
+
+Frais déplacement :
+
+<br>
++5 € jusqu'à 5 km  
+<br>
++10 € jusqu'à 10 km  
+<br>
++15 € au delà  
+
 </div>
+
 </section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
-<h2>Contact & Localisation</h2>
-<div class="cta">
-<a href="tel:+33678430958">📞 00 33 (0)6 78 43 09 58</a>
-<a href="VOTRE_LIEN_AVIS_GOOGLE" target="_blank" class="google-review">⭐ Laisser un avis Google</a>
+
+<h2>Prise de rendez-vous ostéopathe animalier Vannes</h2>
+
+<div class="card">
+
+Privilégier l’envoi d’un SMS au :
+
+<br><br>
+
+<strong>06 78 43 09 58</strong>
+
+<br><br>
+
+avec :
+
+<br>
+
+Nom  
+<br>
+Adresse  
+<br>
+Nom de l’animal  
+<br>
+Motif  
+
 </div>
 
-<div class="map-container">
-<iframe 
-src="https://maps.google.com/maps?q=OSTEOPATHE%20Animalier%20O.A.%20555%20-%20M.%20BIHAN&t=&z=13&ie=UTF8&iwloc=&output=embed"
-allowfullscreen>
-</iframe>
+<div class="cta">
+
+<a href="sms:+33678430958" class="btn sms">
+Envoyer SMS
+</a>
+
+<a href="tel:+33678430958" class="btn tel">
+Appeler
+</a>
+
+<a href="https://g.page/r/CTsV_n9u4FwMEAE/review"
+target="_blank"
+class="btn google">
+
+Avis Google
+
+</a>
+
 </div>
+
 </section>
 
+
 <footer>
-© 2026 - Cabinet d’Ostéopathie Animale
+
+© M. BIHAN – Ostéopathe Animalier O.A. N°555 – Vannes (56)
+
 </footer>
 
-<script>
-const sections = document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
-  sections.forEach(sec=>{
-    if(sec.getBoundingClientRect().top < window.innerHeight - 100){
-      sec.classList.add("visible");
-    }
-  });
-});
-</script>
+
+<!-- STRUCTURED DATA ELITE -->
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "VeterinaryCare",
-  "name": "Cabinet d’Ostéopathie Animale",
-  "telephone": "+33678430958",
-  "areaServed": "France",
-  "serviceOffered": [
-    "Ostéopathie équine",
-    "Ostéopathie canine",
-    "Ostéopathie féline"
-  ]
+"@context":"https://schema.org",
+"@type":"VeterinaryCare",
+
+"name":"M. BIHAN – Ostéopathe Animalier O.A. N°555",
+
+"image":"https://votresite.fr/cheval.jpg",
+
+"telephone":"+33678430958",
+
+"url":"https://votresite.fr",
+
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Vannes",
+"postalCode":"56000",
+"addressRegion":"Bretagne",
+"addressCountry":"FR"
+},
+
+"areaServed":[
+"Vannes",
+"Morbihan",
+"Bretagne"
+],
+
+"sameAs":[
+"https://g.page/r/CTsV_n9u4FwMEAE/review"
+],
+
+"priceRange":"50-60 EUR",
+
+"openingHours":"Mo-Sa 08:00-20:00"
+
 }
 </script>
 
 </body>
 </html>
-https://g.page/r/CTsV_n9u4FwMEAE/review  
