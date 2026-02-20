@@ -6,20 +6,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ostéopathe animalier Vannes (56) | Chien, Chat, Cheval à domicile | M. BIHAN O.A. N°555</title>
+<title>
+Ostéopathe animalier Vannes (56) | Chien, Chat, Cheval | M. BIHAN O.A. N°555
+</title>
 
-<meta name="description" content="Ostéopathe animalier à Vannes (56) – chien, chat et cheval. Plus de 30 ans d'expérience. Consultation à domicile. Intervention Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden.">
+<meta name="description" content="Ostéopathe animalier à Vannes (56). 30 ans d'expérience. Consultation chien, chat, cheval à domicile.">
 
 <link rel="canonical" href="https://pierre-yveseasy-birth.github.io/OSTEOPATHIE-ANIMALE-56/">
 
 <meta name="geo.region" content="FR-56">
 <meta name="geo.placename" content="Vannes">
 <meta name="geo.position" content="47.658236;-2.760847">
-<meta name="ICBM" content="47.658236, -2.760847">
 
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -32,47 +31,45 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-/* BODY */
-
 body{
 background:#f4f7f6;
-color:#1f2d2a;
-line-height:1.6;
+color:#2d3436;
 }
 
-/* NAV */
+/* MENU */
 
 nav{
 position:fixed;
 top:0;
 width:100%;
 background:white;
+padding:15px;
 box-shadow:0 4px 20px rgba(0,0,0,0.08);
-padding:18px;
 z-index:1000;
 text-align:center;
 }
 
 nav a{
-margin:10px 25px;
+margin:10px 20px;
 text-decoration:none;
-color:#1f2d2a;
+color:#2d3436;
 font-weight:600;
-transition:0.3s;
 }
 
 nav a:hover{
 color:#2e7d6b;
 }
 
-/* HEADER HERO */
+/* HEADER PREMIUM */
 
 header{
+
 height:100vh;
 
 background:
 linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url("https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1920")
+url("images/hero.webp")
+
 center/cover no-repeat;
 
 display:flex;
@@ -81,79 +78,70 @@ justify-content:center;
 text-align:center;
 color:white;
 padding:20px;
+
 }
 
 header h1{
-font-size:clamp(2em,5vw,3.5em);
+font-size:3em;
 margin-bottom:15px;
-font-weight:700;
 }
-
-header p{
-font-size:1.3em;
-margin-bottom:10px;
-}
-
-/* BUTTON */
 
 .btn{
+
 display:inline-block;
 background:#2e7d6b;
 color:white;
-padding:16px 32px;
-border-radius:40px;
+padding:14px 28px;
+border-radius:30px;
 text-decoration:none;
-margin-top:20px;
+margin-top:15px;
 font-weight:600;
-box-shadow:0 6px 20px rgba(0,0,0,0.15);
 transition:0.3s;
+
 }
 
 .btn:hover{
 background:#256b5b;
-transform:translateY(-3px);
+transform:translateY(-2px);
 }
 
 /* SECTION */
 
 section{
-padding:90px 20px;
-max-width:1150px;
+padding:80px 20px;
+max-width:1100px;
 margin:auto;
 }
-
-/* TITRES */
 
 h2{
 text-align:center;
 color:#2e7d6b;
 margin-bottom:40px;
-font-size:2.2em;
 }
 
 /* CARD */
 
 .card{
 background:white;
-padding:40px;
-border-radius:18px;
-box-shadow:0 10px 35px rgba(0,0,0,0.08);
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* ANIMAUX */
+/* ANIMAUX PREMIUM */
 
 .animaux{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
-margin-top:30px;
 }
 
 .animaux img{
 width:100%;
-height:270px;
+height:280px;
 object-fit:cover;
-border-radius:18px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 transition:0.4s;
 }
 
@@ -161,22 +149,14 @@ transition:0.4s;
 transform:scale(1.05);
 }
 
-/* AVANTAGES */
+/* AVIS */
 
-.avantages{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.avantage{
+.avis-container{
 background:white;
 padding:30px;
 border-radius:15px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 text-align:center;
-font-weight:500;
 }
 
 /* MAP */
@@ -186,7 +166,6 @@ width:100%;
 height:450px;
 border:none;
 border-radius:15px;
-margin-top:20px;
 }
 
 /* FOOTER */
@@ -194,57 +173,11 @@ margin-top:20px;
 footer{
 background:#2e7d6b;
 color:white;
+padding:40px;
 text-align:center;
-padding:35px;
-margin-top:40px;
-font-size:0.95em;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-nav a{
-display:block;
-margin:12px;
-}
-
-header{
-height:90vh;
-}
-
 }
 
 </style>
-
-<!-- SEO STRUCTURED DATA -->
-
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "VeterinaryCare",
-"name": "Ostéopathe Animalier O.A. N°555 - M. BIHAN",
-"image": "https://images.unsplash.com/photo-1517849845537-4d257902454a",
-"telephone": "+33678430958",
-"address": {
-"@type": "PostalAddress",
-"streetAddress": "25 rue Pierre Ache",
-"addressLocality": "Vannes",
-"postalCode": "56000",
-"addressCountry": "FR"
-},
-"areaServed": [
-"Vannes",
-"Saint-Avé",
-"Arradon",
-"Baden",
-"Ploëren",
-"Larmor-Baden"
-],
-"url": "https://pierre-yveseasy-birth.github.io/OSTEOPATHIE-ANIMALE-56/",
-"priceRange": "50€-60€"
-}
-</script>
 
 </head>
 
@@ -253,10 +186,9 @@ height:90vh;
 <nav>
 
 <a href="#accueil">Accueil</a>
-<a href="#services">Services</a>
 <a href="#tarifs">Tarifs</a>
+<a href="#avis">Avis</a>
 <a href="#contact">Contact</a>
-<a href="#carte">Localisation</a>
 
 </nav>
 
@@ -264,51 +196,38 @@ height:90vh;
 
 <div>
 
-<h1>Ostéopathe animalier à Vannes (56)</h1>
+<h1>Ostéopathe animalier à Vannes</h1>
+
+<p>M. BIHAN – O.A. N°555</p>
 
 <p>Chien • Chat • Cheval</p>
 
-<p>M. BIHAN – Ostéopathe Animalier O.A. N°555</p>
-
-<a href="tel:+33678430958" class="btn">
-📞 Prendre rendez-vous
+<a href="https://g.page/r/CTsV_n9u4FwMEAE/review" target="_blank" class="btn">
+⭐ Donner votre avis Google
 </a>
 
 </div>
 
 </header>
 
-<section id="services">
+<section>
 
-<h2>Ostéopathie animale à Vannes</h2>
+<h2>Présentation</h2>
 
 <div class="card">
 
 <p>
-Ostéopathe animalier basé à Vannes, j’interviens à domicile pour les chiens, chats et chevaux dans tout le Morbihan.
+Ostéopathe animalier à Vannes, j'interviens à domicile sur chiens, chats et chevaux.
 </p>
-
-<br>
 
 <p>
-Les soins permettent d'améliorer la mobilité, soulager les douleurs, optimiser les performances et favoriser la récupération post-opératoire.
+30 ans d'expérience en ostéopathie animale.
 </p>
-
-<br>
 
 <p>
-Plus de <strong>30 ans d’expérience professionnelle</strong>.
+Secteur :
+Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
 </p>
-
-</div>
-
-<div class="animaux">
-
-<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?q=80&w=1200" alt="Ostéopathe chien Vannes">
-
-<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1200" alt="Ostéopathe chat Vannes">
-
-<img src="https://images.unsplash.com/photo-1501706362039-c6e08a7f4579?q=80&w=1200" alt="Ostéopathe cheval Vannes">
 
 </div>
 
@@ -316,25 +235,35 @@ Plus de <strong>30 ans d’expérience professionnelle</strong>.
 
 <section>
 
-<h2>Pourquoi consulter ?</h2>
+<h2>Animaux pris en charge</h2>
 
-<div class="avantages">
+<div class="animaux">
 
-<div class="avantage">
-✔ Douleurs articulaires
+<img src="images/chien.webp" alt="Ostéopathe chien Vannes" loading="lazy">
+
+<img src="images/chat.webp" alt="Ostéopathe chat Vannes" loading="lazy">
+
+<img src="images/cheval.webp" alt="Ostéopathe cheval Vannes" loading="lazy">
+
 </div>
 
-<div class="avantage">
-✔ Suivi post-opératoire
-</div>
+</section>
 
-<div class="avantage">
-✔ Animal âgé ou sportif
-</div>
+<section id="avis">
 
-<div class="avantage">
-✔ Prévention et bien-être
-</div>
+<h2>Avis Google</h2>
+
+<div class="avis-container">
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+<div class="elfsight-app-YOUR-ID-HERE"></div>
+
+<br>
+
+<a href="https://g.page/r/CTsV_n9u4FwMEAE/review" target="_blank" class="btn">
+⭐ Laisser un avis Google
+</a>
 
 </div>
 
@@ -346,11 +275,8 @@ Plus de <strong>30 ans d’expérience professionnelle</strong>.
 
 <div class="card">
 
-<p>Consultation chien / chat : <strong>50 €</strong></p>
-
-<p>Consultation cheval : <strong>60 €</strong></p>
-
-<p>Déplacement selon distance</p>
+<p>Chien / Chat : 50 €</p>
+<p>Cheval : 60 €</p>
 
 </div>
 
@@ -362,18 +288,13 @@ Plus de <strong>30 ans d’expérience professionnelle</strong>.
 
 <div class="card">
 
-<p>
-
 <a href="tel:+33678430958" class="btn">
 📞 06 78 43 09 58
 </a>
 
-</p>
-
-<br>
+<br><br>
 
 <p>
-Cabinet :<br>
 25 rue Pierre Ache<br>
 56000 Vannes
 </p>
@@ -382,19 +303,25 @@ Cabinet :<br>
 
 </section>
 
-<section id="carte">
+<section>
 
-<h2>Localisation – Vannes</h2>
+<h2>Localisation</h2>
 
-<iframe src="https://www.google.com/maps?q=25+rue+Pierre+Ache+56000+Vannes&z=15&output=embed"></iframe>
+<iframe src="https://www.google.com/maps?q=25+rue+Pierre+Ache+56000+Vannes&output=embed"></iframe>
 
 </section>
 
 <footer>
 
-© 2026 Ostéopathe Animalier Vannes (56) – M. BIHAN O.A. N°555<br>
+<p>
+Ostéopathe animalier Vannes – M. BIHAN
+</p>
 
-Intervention : Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
+<br>
+
+<a href="https://g.page/r/CTsV_n9u4FwMEAE/review" target="_blank" class="btn">
+⭐ Donner votre avis Google
+</a>
 
 </footer>
 
