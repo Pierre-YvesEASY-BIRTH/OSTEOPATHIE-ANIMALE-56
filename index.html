@@ -6,15 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Ostéopathe animalier Vannes (56) | Chien, Chat, Cheval | M. BIHAN O.A. N°555
-</title>
+<title>Ostéopathe animalier Vannes (56) | Chien, Chat, Cheval à domicile | M. BIHAN O.A. N°555</title>
 
-<meta name="description" content="Ostéopathe animalier à Vannes (56). Plus de 30 ans d'expérience. Consultation chien, chat et cheval à domicile. Intervention Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden.">
-
-<meta name="keywords" content="ostéopathe animalier Vannes, ostéopathie animale 56, ostéopathe chien Vannes, ostéopathe cheval Morbihan, ostéopathe chat Vannes">
-
-<meta name="author" content="M. BIHAN">
+<meta name="description" content="Ostéopathe animalier à Vannes (56) – chien, chat et cheval. Plus de 30 ans d'expérience. Consultation à domicile. Intervention Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden.">
 
 <link rel="canonical" href="https://pierre-yveseasy-birth.github.io/OSTEOPATHIE-ANIMALE-56/">
 
@@ -25,92 +19,212 @@ Ostéopathe animalier Vannes (56) | Chien, Chat, Cheval | M. BIHAN O.A. N°555
 
 <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 /* RESET */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins', sans-serif;}
 
-body{background:#f4f7f6;color:#2d3436;line-height:1.6;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-/* MENU */
+/* BODY */
+
+body{
+background:#f4f7f6;
+color:#1f2d2a;
+line-height:1.6;
+}
+
+/* NAV */
+
 nav{
-position:fixed;top:0;width:100%;background:white;padding:15px;
-box-shadow:0 3px 15px rgba(0,0,0,0.08);z-index:1000;text-align:center;
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+padding:18px;
+z-index:1000;
+text-align:center;
 }
 
 nav a{
-margin:10px 20px;text-decoration:none;color:#2d3436;
-font-weight:600;transition:0.3s;
+margin:10px 25px;
+text-decoration:none;
+color:#1f2d2a;
+font-weight:600;
+transition:0.3s;
 }
 
-nav a:hover{color:#2e7d6b;}
+nav a:hover{
+color:#2e7d6b;
+}
 
-/* HEADER */
+/* HEADER HERO */
+
 header{
 height:100vh;
+
 background:
 linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
 url("https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1920")
 center/cover no-repeat;
-display:flex;align-items:center;justify-content:center;
-text-align:center;color:white;padding:20px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
 }
 
-header h1{font-size:clamp(2em,5vw,3.5em);margin-bottom:15px;}
+header h1{
+font-size:clamp(2em,5vw,3.5em);
+margin-bottom:15px;
+font-weight:700;
+}
+
+header p{
+font-size:1.3em;
+margin-bottom:10px;
+}
+
+/* BUTTON */
 
 .btn{
-display:inline-block;background:#2e7d6b;color:white;
-padding:14px 28px;border-radius:30px;text-decoration:none;
-margin-top:20px;font-weight:600;transition:0.3s;
+display:inline-block;
+background:#2e7d6b;
+color:white;
+padding:16px 32px;
+border-radius:40px;
+text-decoration:none;
+margin-top:20px;
+font-weight:600;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+transition:0.3s;
 }
 
-.btn:hover{background:#256b5b;transform:translateY(-2px);}
+.btn:hover{
+background:#256b5b;
+transform:translateY(-3px);
+}
 
-section{padding:80px 20px;max-width:1100px;margin:auto;}
+/* SECTION */
 
-h2{text-align:center;color:#2e7d6b;margin-bottom:40px;font-size:2em;}
+section{
+padding:90px 20px;
+max-width:1150px;
+margin:auto;
+}
+
+/* TITRES */
+
+h2{
+text-align:center;
+color:#2e7d6b;
+margin-bottom:40px;
+font-size:2.2em;
+}
+
+/* CARD */
 
 .card{
-background:white;padding:35px;border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 10px 35px rgba(0,0,0,0.08);
 }
 
-.animaux,.galerie{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+/* ANIMAUX */
+
+.animaux{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:30px;
 }
 
-.animaux img,.galerie img{
-width:100%;height:260px;object-fit:cover;border-radius:15px;
+.animaux img{
+width:100%;
+height:270px;
+object-fit:cover;
+border-radius:18px;
 transition:0.4s;
 }
 
-.animaux img:hover,.galerie img:hover{transform:scale(1.05);}
+.animaux img:hover{
+transform:scale(1.05);
+}
+
+/* AVANTAGES */
+
+.avantages{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.avantage{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+text-align:center;
+font-weight:500;
+}
+
+/* MAP */
 
 iframe{
-width:100%;height:450px;border:none;border-radius:15px;
+width:100%;
+height:450px;
+border:none;
+border-radius:15px;
+margin-top:20px;
 }
+
+/* FOOTER */
 
 footer{
-background:#2e7d6b;color:white;text-align:center;
-padding:30px;margin-top:40px;
+background:#2e7d6b;
+color:white;
+text-align:center;
+padding:35px;
+margin-top:40px;
+font-size:0.95em;
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
-header{height:90vh;}
-nav a{display:block;margin:10px;}
+
+nav a{
+display:block;
+margin:12px;
+}
+
+header{
+height:90vh;
+}
+
 }
 
 </style>
 
-<!-- DONNÉES STRUCTURÉES SEO -->
+<!-- SEO STRUCTURED DATA -->
+
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
 "@type": "VeterinaryCare",
 "name": "Ostéopathe Animalier O.A. N°555 - M. BIHAN",
+"image": "https://images.unsplash.com/photo-1517849845537-4d257902454a",
 "telephone": "+33678430958",
 "address": {
 "@type": "PostalAddress",
@@ -119,7 +233,14 @@ nav a{display:block;margin:10px;}
 "postalCode": "56000",
 "addressCountry": "FR"
 },
-"areaServed": ["Vannes","Saint-Avé","Arradon","Baden","Ploëren","Larmor-Baden"],
+"areaServed": [
+"Vannes",
+"Saint-Avé",
+"Arradon",
+"Baden",
+"Ploëren",
+"Larmor-Baden"
+],
 "url": "https://pierre-yveseasy-birth.github.io/OSTEOPATHIE-ANIMALE-56/",
 "priceRange": "50€-60€"
 }
@@ -130,76 +251,151 @@ nav a{display:block;margin:10px;}
 <body>
 
 <nav>
+
 <a href="#accueil">Accueil</a>
+<a href="#services">Services</a>
 <a href="#tarifs">Tarifs</a>
 <a href="#contact">Contact</a>
-<a href="#carte">Carte</a>
+<a href="#carte">Localisation</a>
+
 </nav>
 
 <header id="accueil">
+
 <div>
-<h1>
-Ostéopathe animalier à Vannes (56) – Chien, Chat, Cheval – M. BIHAN O.A. N°555
-</h1>
-<a href="https://g.page/r/CTsV_n9u4FwMEAE/review" target="_blank" class="btn">
-⭐ Laisser un avis Google
+
+<h1>Ostéopathe animalier à Vannes (56)</h1>
+
+<p>Chien • Chat • Cheval</p>
+
+<p>M. BIHAN – Ostéopathe Animalier O.A. N°555</p>
+
+<a href="tel:+33678430958" class="btn">
+📞 Prendre rendez-vous
 </a>
+
 </div>
+
 </header>
 
-<section>
-<h2>Présentation</h2>
+<section id="services">
+
+<h2>Ostéopathie animale à Vannes</h2>
+
 <div class="card">
+
 <p>
-Ostéopathe animalier basé à Vannes (56000), j’interviens auprès des chiens, chats et chevaux dans tout le Morbihan.
+Ostéopathe animalier basé à Vannes, j’interviens à domicile pour les chiens, chats et chevaux dans tout le Morbihan.
 </p>
+
+<br>
+
 <p>
-Plus de 30 ans d’expérience en ostéopathie animale, en pré-opératoire et post-opératoire.
+Les soins permettent d'améliorer la mobilité, soulager les douleurs, optimiser les performances et favoriser la récupération post-opératoire.
 </p>
+
+<br>
+
 <p>
-Intervention à domicile : Vannes – Saint-Avé – Arradon – Baden – Ploëren – Larmor-Baden.
+Plus de <strong>30 ans d’expérience professionnelle</strong>.
 </p>
+
 </div>
+
+<div class="animaux">
+
+<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?q=80&w=1200" alt="Ostéopathe chien Vannes">
+
+<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1200" alt="Ostéopathe chat Vannes">
+
+<img src="https://images.unsplash.com/photo-1501706362039-c6e08a7f4579?q=80&w=1200" alt="Ostéopathe cheval Vannes">
+
+</div>
+
 </section>
 
 <section>
-<h2>Animaux pris en charge</h2>
-<div class="animaux">
-<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?q=80&w=1200" alt="Ostéopathe chien Vannes Morbihan">
-<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1200" alt="Ostéopathe chat Vannes 56">
-<img src="https://images.unsplash.com/photo-1501706362039-c6e08a7f4579?q=80&w=1200" alt="Ostéopathe cheval Vannes Morbihan">
+
+<h2>Pourquoi consulter ?</h2>
+
+<div class="avantages">
+
+<div class="avantage">
+✔ Douleurs articulaires
 </div>
+
+<div class="avantage">
+✔ Suivi post-opératoire
+</div>
+
+<div class="avantage">
+✔ Animal âgé ou sportif
+</div>
+
+<div class="avantage">
+✔ Prévention et bien-être
+</div>
+
+</div>
+
 </section>
 
 <section id="tarifs">
+
 <h2>Tarifs</h2>
+
 <div class="card">
-<p>Consultation chien ou chat : <strong>50 €</strong></p>
+
+<p>Consultation chien / chat : <strong>50 €</strong></p>
+
 <p>Consultation cheval : <strong>60 €</strong></p>
+
+<p>Déplacement selon distance</p>
+
 </div>
+
 </section>
 
 <section id="contact">
+
 <h2>Contact</h2>
+
 <div class="card">
+
 <p>
+
 <a href="tel:+33678430958" class="btn">
 📞 06 78 43 09 58
 </a>
+
 </p>
+
+<br>
+
 <p>
-25 rue Pierre Ache – 56000 Vannes
+Cabinet :<br>
+25 rue Pierre Ache<br>
+56000 Vannes
 </p>
+
 </div>
+
 </section>
 
 <section id="carte">
-<h2>Localisation</h2>
+
+<h2>Localisation – Vannes</h2>
+
 <iframe src="https://www.google.com/maps?q=25+rue+Pierre+Ache+56000+Vannes&z=15&output=embed"></iframe>
+
 </section>
 
 <footer>
-© 2026 Ostéopathe Animalier Vannes – M. BIHAN O.A. N°555
+
+© 2026 Ostéopathe Animalier Vannes (56) – M. BIHAN O.A. N°555<br>
+
+Intervention : Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
+
 </footer>
 
 </body>
