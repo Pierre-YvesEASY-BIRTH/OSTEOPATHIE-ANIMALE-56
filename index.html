@@ -10,7 +10,7 @@
 Ostéopathe animalier Vannes (56) | Chien, Chat, Cheval | M. BIHAN O.A. N°555
 </title>
 
-<meta name="description" content="Ostéopathe animalier à Vannes (56). 30 ans d'expérience. Consultation chien, chat, cheval à domicile.">
+<meta name="description" content="Ostéopathe animalier à Vannes (56). 30 ans d'expérience. Consultation chien, chat, cheval à domicile. Intervention Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden.">
 
 <link rel="canonical" href="https://pierre-yveseasy-birth.github.io/OSTEOPATHIE-ANIMALE-56/">
 
@@ -34,6 +34,7 @@ font-family:'Poppins',sans-serif;
 body{
 background:#f4f7f6;
 color:#2d3436;
+line-height:1.6;
 }
 
 /* MENU */
@@ -60,7 +61,7 @@ nav a:hover{
 color:#2e7d6b;
 }
 
-/* HEADER PREMIUM */
+/* HEADER */
 
 header{
 
@@ -68,7 +69,7 @@ height:100vh;
 
 background:
 linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url("images/hero.webp")
+url("https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1920")
 
 center/cover no-repeat;
 
@@ -82,9 +83,15 @@ padding:20px;
 }
 
 header h1{
-font-size:3em;
+font-size:clamp(2em,5vw,3.5em);
 margin-bottom:15px;
 }
+
+header p{
+font-size:1.2em;
+}
+
+/* BUTTON */
 
 .btn{
 
@@ -128,20 +135,19 @@ border-radius:15px;
 box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* ANIMAUX PREMIUM */
+/* ANIMAUX */
 
 .animaux{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .animaux img{
 width:100%;
-height:280px;
+height:260px;
 object-fit:cover;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
 transition:0.4s;
 }
 
@@ -177,7 +183,42 @@ padding:40px;
 text-align:center;
 }
 
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav a{
+display:block;
+margin:10px;
+}
+
+header{
+height:90vh;
+}
+
+}
+
 </style>
+
+<!-- STRUCTURED DATA SEO -->
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"VeterinaryCare",
+"name":"Ostéopathe Animalier O.A. N°555 - M. BIHAN",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"25 rue Pierre Ache",
+"addressLocality":"Vannes",
+"postalCode":"56000",
+"addressCountry":"FR"
+},
+"telephone":"+33678430958",
+"url":"https://pierre-yveseasy-birth.github.io/OSTEOPATHIE-ANIMALE-56/",
+"priceRange":"50€-60€"
+}
+</script>
 
 </head>
 
@@ -189,6 +230,7 @@ text-align:center;
 <a href="#tarifs">Tarifs</a>
 <a href="#avis">Avis</a>
 <a href="#contact">Contact</a>
+<a href="#carte">Carte</a>
 
 </nav>
 
@@ -196,7 +238,7 @@ text-align:center;
 
 <div>
 
-<h1>Ostéopathe animalier à Vannes</h1>
+<h1>Ostéopathe animalier à Vannes (56)</h1>
 
 <p>M. BIHAN – O.A. N°555</p>
 
@@ -217,16 +259,18 @@ text-align:center;
 <div class="card">
 
 <p>
-Ostéopathe animalier à Vannes, j'interviens à domicile sur chiens, chats et chevaux.
+Ostéopathe animalier à Vannes, j'interviens auprès des chiens, chats et chevaux afin d'améliorer leur mobilité, posture, leur qualité de vie et bien-être.
 </p>
 
 <p>
-30 ans d'expérience en ostéopathie.
+Plus de 30 années d'expérience en ostéopathie.
 </p>
 
 <p>
-Secteur :
-Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
+Intervention à domicile :
+<strong>
+Vannes – Saint-Avé – Arradon – Baden – Ploëren – Larmor-Baden
+</strong>
 </p>
 
 </div>
@@ -239,11 +283,14 @@ Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
 
 <div class="animaux">
 
-<img src="images/chien.webp" alt="Ostéopathe chien Vannes" loading="lazy">
+<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?q=80&w=1200"
+alt="Ostéopathe chien Vannes">
 
-<img src="images/chat.webp" alt="Ostéopathe chat Vannes" loading="lazy">
+<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1200"
+alt="Ostéopathe chat Vannes">
 
-<img src="images/cheval.webp" alt="Ostéopathe cheval Vannes" loading="lazy">
+<img src="https://images.unsplash.com/photo-1501706362039-c6e08a7f4579?q=80&w=1200"
+alt="Ostéopathe cheval Vannes">
 
 </div>
 
@@ -251,7 +298,7 @@ Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
 
 <section id="avis">
 
-<h2>Avis Google</h2>
+<h2>Avis clients</h2>
 
 <div class="avis-container">
 
@@ -275,8 +322,9 @@ Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
 
 <div class="card">
 
-<p>Chien / Chat : 50 €</p>
-<p>Cheval : 60 €</p>
+<p>Consultation chien ou chat : <strong>50 €</strong></p>
+
+<p>Consultation cheval : <strong>60 €</strong></p>
 
 </div>
 
@@ -299,11 +347,17 @@ Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
 56000 Vannes
 </p>
 
+<br>
+
+<a href="https://g.page/r/CTsV_n9u4FwMEAE/review" target="_blank" class="btn">
+⭐ Donner votre avis Google
+</a>
+
 </div>
 
 </section>
 
-<section>
+<section id="carte">
 
 <h2>Localisation</h2>
 
@@ -314,7 +368,7 @@ Vannes, Saint-Avé, Arradon, Baden, Ploëren, Larmor-Baden
 <footer>
 
 <p>
-Ostéopathe animalier Vannes – M. BIHAN
+Ostéopathe Animalier Vannes – M. BIHAN O.A. N°555
 </p>
 
 <br>
