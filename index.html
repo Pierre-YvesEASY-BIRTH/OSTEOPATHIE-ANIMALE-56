@@ -6,9 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Ostéopathe animalier Vannes (56) | Chien Chat Cheval | RDV SMS</title>
+<title>
+Ostéopathe animalier Vannes (56) | RDV SMS | Chien Chat Cheval | Morbihan
+</title>
 
-<meta name="description" content="Ostéopathe animalier Vannes (56). Consultation chien, chat, cheval à domicile. RDV SMS 06 78 43 09 58. Intervention Morbihan : Vannes, Saint-Avé, Arradon, Baden, Ploeren, Larmor-Baden.">
+<meta name="description" content="Ostéopathe animalier Vannes (56). Consultation chien, chat, cheval à domicile. RDV par SMS 06 78 43 09 58. Intervention Morbihan : Vannes, Arradon, Baden, Saint-Avé, Ploeren.">
 
 <meta name="robots" content="index, follow">
 
@@ -30,7 +32,7 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f8fbfa;
+background:#f6fbf9;
 color:#222;
 }
 
@@ -47,6 +49,17 @@ z-index:999;
 text-align:center;
 }
 
+nav a{
+margin:0 15px;
+text-decoration:none;
+font-weight:600;
+color:#222;
+}
+
+nav a:hover{
+color:#2e7d6b;
+}
+
 /* HERO */
 
 .hero{
@@ -54,11 +67,8 @@ text-align:center;
 height:100vh;
 
 background:
-
 linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-
-url("https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1920")
-
+url("https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=1920")
 center/cover no-repeat;
 
 display:flex;
@@ -70,33 +80,32 @@ color:white;
 }
 
 .hero-content{
-animation:fadeUp 1.2s ease;
+animation:fadeUp 1s ease;
+padding:20px;
 }
 
 .hero h1{
 font-size:clamp(2.2rem,5vw,3.8rem);
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:1.3rem;
+font-size:1.2rem;
 margin-bottom:10px;
 }
 
 /* BUTTON */
 
 .btn{
-
+display:inline-block;
 background:#2e7d6b;
 color:white;
-padding:15px 30px;
+padding:14px 30px;
 border-radius:40px;
 text-decoration:none;
-display:inline-block;
 margin-top:15px;
 font-weight:600;
 transition:0.3s;
-
 }
 
 .btn:hover{
@@ -104,22 +113,19 @@ background:#1b5e20;
 transform:translateY(-3px);
 }
 
-/* FLOAT SMS BUTTON */
+/* FLOAT BUTTON */
 
 .sms-float{
-
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:20px;
+right:20px;
 background:#25D366;
 color:white;
-padding:18px 22px;
+padding:16px 20px;
 border-radius:50px;
-font-weight:600;
 text-decoration:none;
+font-weight:600;
 box-shadow:0 5px 20px rgba(0,0,0,0.3);
-z-index:999;
-
 }
 
 /* SECTION */
@@ -131,21 +137,19 @@ margin:auto;
 }
 
 .card{
-
 background:white;
 padding:40px;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,0.08);
-
 }
 
-/* IMAGES */
+/* GRID */
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-margin-top:30px;
+margin-top:25px;
 }
 
 .grid img{
@@ -164,6 +168,12 @@ border-radius:15px;
 border:none;
 }
 
+/* FAQ */
+
+.faq-item{
+margin-bottom:20px;
+}
+
 /* FOOTER */
 
 footer{
@@ -173,26 +183,17 @@ padding:40px;
 text-align:center;
 }
 
-/* FAQ */
-
-.faq-item{
-margin-bottom:20px;
-}
-
-.faq-question{
-font-weight:600;
-font-size:18px;
-}
-
-.faq-answer{
-margin-top:8px;
-}
-
 /* ANIMATION */
 
 @keyframes fadeUp{
-from{opacity:0;transform:translateY(40px);}
-to{opacity:1;transform:translateY(0);}
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 </style>
@@ -200,11 +201,10 @@ to{opacity:1;transform:translateY(0);}
 <!-- SEO STRUCTURED DATA -->
 
 <script type="application/ld+json">
-
 {
 "@context":"https://schema.org",
 "@type":"VeterinaryCare",
-"name":"Ostéopathe animalier Vannes M. BIHAN",
+"name":"Ostéopathe animalier Vannes - M. BIHAN",
 "address":{
 "@type":"PostalAddress",
 "streetAddress":"25 rue Pierre Ache",
@@ -213,10 +213,16 @@ to{opacity:1;transform:translateY(0);}
 "addressCountry":"FR"
 },
 "telephone":"+33678430958",
-"areaServed":"Morbihan",
+"areaServed":[
+"Vannes",
+"Arradon",
+"Baden",
+"Saint-Avé",
+"Ploeren",
+"Morbihan"
+],
 "priceRange":"50€-60€"
 }
-
 </script>
 
 </head>
@@ -226,12 +232,24 @@ to{opacity:1;transform:translateY(0);}
 <!-- FLOAT BUTTON -->
 
 <a href="sms:+33678430958" class="sms-float">
-SMS
+📩 SMS
 </a>
+
+<!-- NAV -->
+
+<nav>
+
+<a href="#accueil">Accueil</a>
+<a href="#rdv">Prendre RDV</a>
+<a href="#tarifs">Tarifs</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+
+</nav>
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="accueil">
 
 <div class="hero-content">
 
@@ -242,68 +260,96 @@ Prise de RDV par SMS au <strong>06 78 43 09 58</strong>
 </p>
 
 <p>
-Intervention :
+Intervention à domicile :
 <strong>
-Vannes – Saint-Avé – Arradon – Baden – Ploeren – Larmor-Baden – Morbihan
+Vannes – Saint-Avé – Arradon – Baden – Ploeren – Morbihan
 </strong>
 </p>
 
-<a href="sms:+33678430958" class="btn">
-
+<a href="#rdv" class="btn">
 Prendre rendez-vous
-
 </a>
 
 </div>
 
 </section>
 
-<!-- GOOGLE REVIEW -->
+<!-- RDV -->
 
-<section class="section">
+<section class="section" id="rdv">
 
 <div class="card">
 
-<h2>Avis client</h2>
+<h2>Prendre rendez-vous</h2>
+
+<a href="sms:+33678430958" class="btn">
+📩 Envoyer un SMS au 06 78 43 09 58
+</a>
+
+<br><br>
+
+<p><strong>Merci de préciser :</strong></p>
+
+<ul style="line-height:1.8">
+
+<li>Votre nom (propriétaire)</li>
+
+<li>Votre adresse précise</li>
+
+<li>Nom et âge de l'animal</li>
+
+<li>Motif de consultation</li>
+
+<li>Date de la dernière consultation vétérinaire</li>
+
+</ul>
+
+<br>
 
 <p>
 
-⭐⭐⭐⭐⭐  
-"Intervention très professionnelle, amélioration immédiate de mon chien. Je recommande vivement."
+<strong>
+Règlement à privilégier par virement bancaire.  
+IBAN Pro envoyé par SMS après confirmation du RDV.
+</strong>
 
 </p>
-
-<a href="https://g.page/r/CTsV_n9u4FwMEAE/review" class="btn" target="_blank">
-
-Donner votre avis Google
-
-</a>
 
 </div>
 
 </section>
 
-<!-- SERVICES -->
+<!-- TARIFS -->
 
-<section class="section">
+<section class="section" id="tarifs">
 
 <div class="card">
 
-<h2>Ostéopathe animalier à Vannes chien chat cheval</h2>
+<h2>Tarifs ostéopathe animalier Vannes</h2>
 
-<p>
+<p>Consultation chien / chat : <strong>50 €</strong></p>
 
-Consultation à domicile dans tout le Morbihan pour améliorer mobilité, confort et récupération.
+<p>Consultation cheval : <strong>60 €</strong></p>
 
-</p>
+<br>
 
-<div class="grid">
+<button class="btn" onclick="toggleFrais()">
 
-<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?q=80&w=1200">
+Voir frais de déplacement
 
-<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1200">
+</button>
 
-<img src="https://images.unsplash.com/photo-1501706362039-c6e08a7f4579?q=80&w=1200">
+<div id="frais" style="display:none; margin-top:20px;">
+
+<ul style="line-height:1.8">
+
+<li>5 € jusqu'à 5 km</li>
+
+<li>10 € jusqu'à 10 km</li>
+
+<li>15 € jusqu'à 15 km</li>
+
+</ul>
 
 </div>
 
@@ -313,41 +359,47 @@ Consultation à domicile dans tout le Morbihan pour améliorer mobilité, confor
 
 <!-- FAQ SEO -->
 
-<section class="section">
+<section class="section" id="faq">
 
 <div class="card">
 
 <h2>FAQ Ostéopathe animalier Vannes</h2>
 
 <div class="faq-item">
-<div class="faq-question">
+
+<strong>
 Pourquoi consulter un ostéopathe animalier à Vannes ?
-</div>
-<div class="faq-answer">
-Pour améliorer mobilité, confort et récupération post-opératoire.
-</div>
+</strong>
+
+<p>
+Pour améliorer mobilité, confort, récupération et bien-être.
+</p>
+
 </div>
 
 <div class="faq-item">
-<div class="faq-question">
+
+<strong>
 Intervenez-vous dans tout le Morbihan ?
-</div>
-<div class="faq-answer">
-Oui : Vannes, Arradon, Baden, Saint-Avé, Larmor-Baden et alentours.
-</div>
+</strong>
+
+<p>
+Oui : Vannes, Arradon, Baden, Saint-Avé, Ploeren et alentours.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- MAP -->
+<!-- CONTACT -->
 
-<section class="section">
+<section class="section" id="contact">
 
 <div class="card">
 
-<h2>Localisation ostéopathe animalier Vannes</h2>
+<h2>Localisation</h2>
 
 <iframe src="https://www.google.com/maps?q=25+rue+Pierre+Ache+56000+Vannes&output=embed"></iframe>
 
@@ -357,10 +409,31 @@ Oui : Vannes, Arradon, Baden, Saint-Avé, Larmor-Baden et alentours.
 
 <footer>
 
-Ostéopathe animalier Vannes – Morbihan  
+Ostéopathe animalier Vannes (56) – Morbihan  
 M. BIHAN O.A. N°555  
+RDV SMS : 06 78 43 09 58  
 
 </footer>
+
+<script>
+
+function toggleFrais(){
+
+var x=document.getElementById("frais");
+
+if(x.style.display==="none"){
+
+x.style.display="block";
+
+}else{
+
+x.style.display="none";
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
